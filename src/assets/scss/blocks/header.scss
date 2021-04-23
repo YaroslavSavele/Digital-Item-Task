@@ -1,0 +1,25 @@
+.header {
+   width: 1200px;
+   height: 48px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   
+   @media (max-width: 1220px) {
+      width: auto;
+      padding: 0 20px 0 20px;
+   }
+}
+.logo,
+.burger {
+   display: block;
+   transition: 0.3s;
+
+   &:hover,
+   &:focus {
+      outline: none;
+      transform: scale(1.2);
+   }
+}
+

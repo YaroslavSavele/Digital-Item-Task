@@ -1,0 +1,142 @@
+.wrapper--bottom {
+   width: 1366px;
+   height: 100%;
+   margin: 0 auto;
+   background-color: #5a98d0;
+   border-radius: 200px 0px 0px 0px;
+   padding-top: 20px;
+   padding-bottom: 124px;
+
+   position: relative;
+
+   @media (max-width: 1368px) {
+      width: auto;
+   }
+   @media (max-width: 600px) {
+      border-radius: 100px 0px 0px 0px;
+      padding-bottom: 50px;
+   }
+}
+.clients {
+   margin: 76px 0 0 213px;
+
+   @media (max-width: 1368px) {
+      margin: 50px auto 50px auto;
+   }
+}
+.clients__top {
+   display: flex;
+   justify-content: flex-start;
+   margin-bottom: 111px;
+
+   @media (max-width: 1368px) {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+   }
+}
+.clients__title {
+   width: 223px;
+   margin-right: 97px;
+   font-size: 36px;
+   line-height: 46px;
+   letter-spacing: 0.05em;
+   color: #ffffff;
+
+   @media (max-width: 1368px) {
+      width: auto;
+      margin: 0 0 30px 0;
+   }
+   @media (max-width: 600px) {
+      margin: 0 35px;
+   }
+}
+.clients__description {
+   width: 540px;
+
+   font-size: 16px;
+   line-height: 26px;
+   letter-spacing: 0.05em;
+   color: #ffffff;
+   opacity: 0.6;
+
+   @media (max-width: 600px) {
+      width: auto;
+      margin: 0 35px;
+   }
+}
+.clients__list {
+   display: grid;
+   grid-template-columns: repeat(4, 235px);
+   grid-template-rows: repeat(2, 128px);
+   gap: 1px;
+   @media (max-width: 1368px) {
+      justify-content: center;
+   }
+   @media (max-width: 1000px) {
+      grid-template-columns: repeat(2, 235px);
+      grid-template-rows: repeat(4, 128px);
+   }
+   @media (max-width: 500px) {
+      grid-template-columns: 235px;
+      grid-template-rows: repeat(8, 128px);
+   }
+}
+.clients__item {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 235px;
+   height: 128px;
+   font-size: 20px;
+   line-height: 46px;
+   letter-spacing: 0.02em;
+   color: #f2f2f2;
+   border-right: 1px solid #ffffff;
+
+   &:nth-child(-n + 4) {
+      border-bottom: 1px solid #ffffff;
+   }
+   &:nth-child(4n + 4) {
+      border-right: none;
+   }
+
+   @media (max-width: 1000px) {
+      border-bottom: 1px solid #ffffff;
+      border-right: none;
+
+      &:nth-child(odd) {
+         border-right: 1px solid #ffffff;
+      }
+      &:nth-child(7) {
+         border-bottom: none;
+      }
+   }
+   @media (max-width: 500px) {
+      &:nth-child(odd) {
+         border-right: none;
+      }
+   }
+}
+.clients__link {
+   width: 235px;
+   height: 128px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   color: #f2f2f2;
+   text-decoration: none;
+   outline: none;
+
+   background-color: #1f3f68;
+
+   transition: 0.3s;
+
+   &:hover,
+   &:focus {
+      opacity: 0.5;
+      outline: none;
+   }
+}

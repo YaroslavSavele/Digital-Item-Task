@@ -1,0 +1,40 @@
+.section-title {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 1366px;
+   margin: 41px auto;
+   padding: 47px 20px 49px 20px;
+   background: url(../images/bg-title.jpg) no-repeat;
+
+   @media (max-width: 1368px) {
+      width: 100%;
+   }
+    @media (max-width: 455px) {
+      background-size: cover;
+   }
+}
+.section-title__title {
+   margin-bottom: 16px;
+   font-size: 44px;
+   line-height: 74px;
+   text-align: center;
+   letter-spacing: 0.05em;
+   color: #ffffff;
+}
+.section-title__description {
+   width: 780px;
+   margin-bottom: 4px;
+   font-size: 20px;
+   line-height: 30px;
+   text-align: center;
+   letter-spacing: 0.03em;
+   color: rgba(255, 255, 255, 0.6);
+
+   @media (max-width: 800px) {
+      width: 100%;
+      margin: 0 20px;
+
+   }
+  
+}

@@ -1,0 +1,50 @@
+@import "vars";
+@import "vendor/reset.scss";
+
+body {
+   background-color: #fff;
+   font-family: "Rubik", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+//Blocks ================
+//@import "blocks/page.scss";
+@import "blocks/header.scss";
+
+@import "blocks/main.scss";
+@import "blocks/aside.scss";
+@import "blocks/clients.scss";
+@import "blocks/footer-bg.scss";
+@import "blocks/modal.scss";
+
+@import "blocks/section-title.scss";
+@import "blocks/main-contacts.scss";
+@import "blocks/map-contacts.scss";
+
+
+@import "blocks/footer.scss";
+
+.page {
+   margin: 10px auto 10px auto;
+}
+
+.hidde {
+   display: none;
+}
+
+.message__input--error {
+   box-shadow: 0 0 15px red;
+   border-color: red;
+   font-size: 20px;
+   color: tomato;
+
+   @media (max-width: 500px) {
+      font-size: 13px;
+   }
+}
+

@@ -1,0 +1,121 @@
+.main {
+   background: linear-gradient(0deg, #98c3e8 8.84%, rgba(152, 195, 232, 0) 31.12%);
+}
+.wrapper {
+   width: 1366px;
+   margin: 0 auto;
+   
+   background: url(../images/illustration-hero.svg) no-repeat 96.5% 2%;
+
+   @media (max-width: 1366px) {
+      width: 1200px;
+   }
+   @media (max-width: 1220px) {
+      width: 1000px;
+   }
+   @media (max-width: 1020px) {
+      width: auto;
+      background-size: 53%;
+      background-position: 50% 81%;
+   }
+   @media (max-width: 600px) {
+      background-position-y: 68%;
+   }
+   @media (max-width: 500px) {
+      background-size: 78%;
+      background-position-y: 80%;
+   }
+}
+.hero {
+   display: flex;
+   flex-direction: column;
+   width: 520px;
+   margin-left: 213px;
+
+   @media (max-width: 1366px) {
+      margin-left: 0;
+   }
+   @media (max-width: 1020px) {
+      margin: 0 auto 0 auto;
+      align-items: center;
+   }
+   @media (max-width: 600px) {
+      width: 350px;
+   }
+}
+.hero__title {
+   margin: 103px 0 29px 1px;
+   font-family: "Scheherazade", serif;
+   font-size: 70px;
+   font-weight: 700;
+   line-height: 74px;
+   letter-spacing: 0.028em;
+   color: #1f3f68;
+
+   @media (max-width: 1020px) {
+      margin: 10px 0;
+   }
+   @media (max-width: 600px) {
+      font-size: 40px;
+      line-height: 40px;
+      text-align: center;
+   }
+}
+.hero__discription {
+   width: 425px;
+   font-size: 16px;
+   line-height: 26px;
+   letter-spacing: 1px;
+   word-spacing: -3px;
+   color: #1f3f68;
+   opacity: 0.6;
+
+   margin-bottom: 76px;
+
+   @media (max-width: 1020px) {
+      margin-bottom: 450px;
+   }
+   @media (max-width: 750px) {
+      margin-bottom: 333px;
+   }
+   @media (max-width: 600px) {
+      width: 320px;
+      margin-bottom: 300px;
+   }
+   @media (max-width: 400px) {
+      margin-bottom: 250px;
+   }
+}
+.btn {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   width: 220px;
+   height: 56px;
+
+   outline: none;
+   border-radius: 10px;
+   text-decoration: none;
+   font-size: 16px;
+   line-height: 26px;
+   letter-spacing: 0.04em;
+   color: #ffffff;
+
+   transition: 0.3s;
+
+   &:hover,
+   &:focus {
+      outline: none;
+      background-color: #084983;
+   }
+}
+.hero__btn {
+   background-color: #5a98d0;
+   box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+
+   margin-bottom: 190px;
+   @media (max-width: 1020px) {
+      margin-bottom: 20px;
+   }
+}

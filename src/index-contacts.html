@@ -1,0 +1,71 @@
+---
+layout: default
+title: index-contacts
+---
+
+<section class="section-title">
+   <h1 class="section-title__title">Contact Us</h1>
+   <p class="section-title__description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua.
+   </p>
+</section>
+<main class="main-contacts">
+   <img src="./assets/images/contact-pic.svg" alt="" class="main-contacts__img">
+   <div class="address">
+      <h3 class="contact__title">ADDRESS</h3>
+      <p class="address__address">
+         Id convallis placerat sit sed duis id amet volutpat quam a, pharetra.
+      </p>
+   </div>
+   <div class="phone">
+      <h3 class="contact__title">PHONE</h3>
+      <ul class="phone__list">
+         <li class="phone__item">
+            <img src="./assets/images/icon-phone.svg" alt="phone" class="phone__icon">
+            <span>+62-812-7313-4321</span>
+         </li>
+         <li class="phone__item">
+            <img src="./assets/images/icon-phone.svg" alt="phone" class="phone__icon">
+            <span>+62-817-000-1234</span>
+         </li>
+      </ul>
+   </div>
+   <div class="service">
+      <h3 class="contact__title">ONLINE SERVICE</h3>
+      <ul class="service__list">
+         <li class="service__item">
+            <a href="#!" target="_blank" class="service__link">
+               <img src="./assets/images/icon-site.svg" alt="WWW" class="service__icon">
+               <span>www.afrianska.com</span>
+            </a>
+         </li>
+         <li class="service__item">
+            <a href="#!" class="service__link">
+               <img src="./assets/images/icon-emal.svg" alt="email" class="service__icon">
+               <span>hello.afrian@gmail.com</span>
+            </a>
+         </li>
+      </ul>
+   </div>
+
+   <form action="" class="message js-form">
+      <h2 class="message__title">SEND US MESSAGE</h2>
+      <h4 class="message__label">Full Name</h4>
+      <input type="text" class="message__input  message__input--name" name="name" placeholder="Your Name">
+      <h4 class="message__label">Email</h4>
+      <input type="text" class="message__input message__input--email" name="mail" placeholder="Your Email">
+      <h4 class="message__label">Message</h4>
+      <textarea class="message__input message__input--message" name="message" placeholder="Your Message"></textarea>
+      <div class="message__out"></div>
+      <div class="message__success modal__message--success hidde">
+         <p class="modal__success">Your message successfully sent</p>
+      </div>
+      <button type="submit" class="btn message__btn">SUBMIT</button>
+   </form>
+
+</main>
+
+<section class="map">
+   <img src="./assets/images/map.jpg" alt="Map">
+</section>
